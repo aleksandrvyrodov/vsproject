@@ -1,0 +1,1 @@
+cat extensions.list |% { code --install-extension $_}
