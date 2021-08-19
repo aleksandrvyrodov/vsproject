@@ -13,6 +13,10 @@ local/*
 !local
 !local/.vscode
 
+local_all/*
+!local_all
+!local_all/create_symlink.cmd
+
 host/*
 !host
 !host/.vscode
