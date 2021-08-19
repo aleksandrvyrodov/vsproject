@@ -1,9 +1,11 @@
 {
     "folders": [
         {
+            "name": "Project",
             "path": "wide"
         },
         {
+            "name": "Source",
             "path": "ssrc"
         },
     ],

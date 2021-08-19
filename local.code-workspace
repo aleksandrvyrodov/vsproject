@@ -1,9 +1,11 @@
 {
     "folders": [
         {
+            "name": "Project",
             "path": "local"
         },
         {
+            "name": "Source",
             "path": "ssrc"
         }
     ],
@@ -35,6 +37,7 @@
         "files.trimTrailingWhitespace": true,
         "files.autoSave": "afterDelay",
         "files.autoGuessEncoding": true,
+        "files.eol": "\n",
 
         /* "files.associations": {
 			"*.html": "twig"

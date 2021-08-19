@@ -1,9 +1,11 @@
 {
     "folders": [
         {
+            "name": "Project",
             "path": "host"
         },
         {
+            "name": "Source",
             "path": "ssrc"
         },
     ],
