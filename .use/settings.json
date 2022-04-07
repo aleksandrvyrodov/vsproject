@@ -44,6 +44,18 @@
       "fontWeight": "700",
       "type": "text"
     },
+    "DEL": {
+      "foreground": "#ffffff",
+      "background": "#ff0e0e",
+      "fontWeight": "700",
+      "type": "whole-line",
+      "rulerColour": "#ff0e0e",
+      "rulerOpacity": 100,
+      "rulerLane": "full",
+      "icon": "x-circle-fill",
+      "iconColour": "#ff0e0e",
+      "gutterIcon": true,
+    }
   },
   "todo-tree.general.tags": [
     "BUG",
