@@ -8,9 +8,9 @@
         }
     }, */
   "terminal.integrated.defaultProfile.windows": "Command Prompt",
-  "files.autoSave": "off",
+  "files.autoSave": "afterDelay",
   "files.autoGuessEncoding": true,
-  "editor.fontFamily": "'Fira Code',Consolas, 'Courier New', monospace",
+  "editor.fontFamily": "'Fira Code', Consolas, 'Courier New', monospace",
   "editor.fontLigatures": true,
   "editor.fontSize": 14,
   "editor.fontWeight": "300",
@@ -22,27 +22,44 @@
     "editor.defaultFormatter": "vscode.typescript-language-features"
   },
   "[php]": {
-    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
+    "editor.bracketPairColorization.enabled": false
   },
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
   },
   "[css]": {
-    "editor.defaultFormatter": "Wscats.eno"
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  "[twig]": {
+    "editor.defaultFormatter": "mblode.twig-language-2",
+    "editor.bracketPairColorization.enabled": false
   },
   "intelephense.environment.phpVersion": "7.4.0",
-  "php.validate.executablePath": "W:\\modules\\php\\PHP_7.4\\php.exe",
+  "php.validate.executablePath": "D:\\OSPanel\\modules\\php\\PHP_7.4\\php.exe",
   // "phpcs.executablePath": "W:\\userdata\\composer\\vendor\\bin\\phpcs",
-  "php.executablePath": "W:\\modules\\php\\PHP_7.4\\php.exe",
+  "php.executablePath": "D:\\OSPanel\\modules\\php\\PHP_7.4\\php.exe",
   "svg.preview.mode": "img",
   "todo-tree.tree.showScanModeButton": true,
-  "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
+  "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)$",
   "todo-tree.highlights.customHighlight": {
     "FAR": {
       "foreground": "#577ee9",
       "background": "#ffffff",
       "fontWeight": "700",
       "type": "text"
+    },
+    "PAS": {
+      // "foreground": "#ffffff",
+      "background": "#88b9f85e",
+      "fontWeight": "700",
+      "type": "whole-line",
+      "rulerColour": "#88b9f8",
+      "rulerOpacity": 100,
+      "rulerLane": "full",
+      "icon": "north-star",
+      "iconColour": "#88b9f8",
+      "gutterIcon": true
     },
     "DEL": {
       "foreground": "#ffffff",
@@ -54,10 +71,12 @@
       "rulerLane": "full",
       "icon": "x-circle-fill",
       "iconColour": "#ff0e0e",
-      "gutterIcon": true,
+      "gutterIcon": true
     }
   },
   "todo-tree.general.tags": [
+    "DEL",
+    "PAS",
     "BUG",
     "HACK",
     "FIXME",
@@ -72,5 +91,17 @@
   },
   "redhat.telemetry.enabled": false,
   "editor.unicodeHighlight.nonBasicASCII": false,
-  "editor.tabSize": 2
+  "editor.tabSize": 2,
+  "workbench.localHistory.maxFileEntries": 100,
+  "workbench.localHistory.maxFileSize": 1024,
+  "window.menuBarVisibility": "compact",
+  "window.title": "${dirty}${activeEditorShort}${separator}${rootPath}",
+  "liveServer.settings.donotVerifyTags": true,
+  "liveServer.settings.donotShowInfoMsg": true,
+
+  "editor.guides.indentation": false,
+  "editor.guides.bracketPairs": false,
+  "editor.stickyScroll.enabled": true,
+
+  "remote.SSH.remotePlatform": {  }
 }
