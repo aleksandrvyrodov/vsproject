@@ -5,8 +5,8 @@ git clone git@github.com:aleksandrvyrodov/vsproject ./%dumpname%
 echo.
 setlocal
 :PROMPT
-SET /P AREYOUSURE=Remove git folder (Y/[N])?
-IF /I "%AREYOUSURE%" NEQ "Y" GOTO END
+SET /P AREYOUSURE=Self git folder (N/[Y])?
+IF /I "%AREYOUSURE%" EQU "Y" GOTO END
 RMDIR /S /Q .\%dumpname%\.git
 RMDIR /S /Q .\%dumpname%\.use
 ERASE ".\%dumpname%\README.md"
